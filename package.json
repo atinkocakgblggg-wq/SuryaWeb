@@ -1,25 +1,8 @@
 {
-  "name": "surya-store-topup",
+  "name": "surya-store",
   "version": "1.0.0",
-  "description": "Website Top Up Roblox dan Redfinger - Surya Store",
-  "main": "index.html",
+  "description": "Surya Store - Top Up Roblox & Redfinger",
   "scripts": {
-    "dev": "npx live-server",
-    "build": "echo 'Build complete'",
-    "start": "npx live-server"
-  },
-  "keywords": [
-    "roblox",
-    "robux",
-    "redfinger",
-    "topup",
-    "gaming",
-    "store"
-  ],
-  "author": "Surya Store",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/yourusername/surya-store-topup.git"
+    "build": "echo 'Static site - no build needed'"
   }
 }
