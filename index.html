@@ -9,6 +9,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Exo+2:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Fix logo rounded */
+        .logo img, .popup-logo, .footer-logo img {
+            border-radius: 12px !important;
+        }
+    </style>
 </head>
 <body>
     <!-- Welcome Popup -->
@@ -16,7 +22,7 @@
         <div class="popup-content welcome-popup">
             <button class="close-btn" onclick="closeWelcomePopup()">&times;</button>
             <div class="popup-header">
-                <img src="https://res.cloudinary.com/dopevbhsx/image/upload/v1768847802/Suryaweb2_enjlbk.png" alt="Surya Store Logo" class="popup-logo">
+                <img src="https://res.cloudinary.com/dopevbhsx/image/upload/v1768847802/Suryaweb2_enjlbk.png" alt="Surya Store Logo" class="popup-logo" style="border-radius: 12px;">
                 <h2>SELAMAT DATANG DI<br><span class="highlight">SURYA STORE</span></h2>
                 <p class="subtitle">TOP UP ROBLOX & REDFINGER TERPERCAYA</p>
             </div>
@@ -88,7 +94,7 @@
         <nav class="navbar">
             <div class="nav-container">
                 <div class="logo">
-                    <img src="https://res.cloudinary.com/dopevbhsx/image/upload/v1768847802/Suryaweb2_enjlbk.png" alt="Surya Store">
+                    <img src="https://res.cloudinary.com/dopevbhsx/image/upload/v1768847802/Suryaweb2_enjlbk.png" alt="Surya Store" style="border-radius: 12px;">
                     <span class="logo-text">SURYA STORE</span>
                 </div>
                 <div class="search-bar">
@@ -111,8 +117,10 @@
                         Chat CS
                     </a>
                     <div class="lang-selector">
-                        <img src="https://flagcdn.com/w20/id.png" alt="ID">
-                        <span>ID / IDR</span>
+                        <svg viewBox="0 0 24 24" width="18" height="18" style="margin-right: 5px;">
+                            <path fill="currentColor" d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zm6.93 6h-2.95c-.32-1.25-.78-2.45-1.38-3.56 1.84.63 3.37 1.91 4.33 3.56zM12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96zM4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2 0 .68.06 1.34.14 2H4.26zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56-1.84-.63-3.37-1.9-4.33-3.56zm2.95-8H5.08c.96-1.66 2.49-2.93 4.33-3.56C8.81 5.55 8.35 6.75 8.03 8zM12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96zM14.34 14H9.66c-.09-.66-.16-1.32-.16-2 0-.68.07-1.35.16-2h4.68c.09.65.16 1.32.16 2 0 .68-.07 1.34-.16 2zm.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95c-.96 1.65-2.49 2.93-4.33 3.56zM16.36 14c.08-.66.14-1.32.14-2 0-.68-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2h-3.38z"/>
+                        </svg>
+                        <span>Language</span>
                     </div>
                 </div>
             </div>
@@ -135,13 +143,13 @@
                     </div>
                     <div class="feature-badge">
                         <svg viewBox="0 0 24 24" width="16" height="16">
-                            <path fill="currentColor" d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/>
+                            <path fill="currentColor" d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 9h12v2H6V9zm8 5H6v-2h8v2zm4-6H6V6h12v2z"/>
                         </svg>
                         Layanan Chat 24/7
                     </div>
                     <div class="feature-badge">
                         <svg viewBox="0 0 24 24" width="16" height="16">
-                            <path fill="currentColor" d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z"/>
+                            <path fill="currentColor" d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/>
                         </svg>
                         Pembayaran Aman
                     </div>
@@ -149,7 +157,7 @@
             </div>
             <div class="hero-image">
                 <div class="floating-card">
-                    <img src="https://res.cloudinary.com/dopevbhsx/image/upload/v1768847802/Suryaweb2_enjlbk.png" alt="Surya Store">
+                    <img src="https://res.cloudinary.com/dopevbhsx/image/upload/v1768847802/Suryaweb2_enjlbk.png" alt="Surya Store" style="border-radius: 12px;">
                 </div>
             </div>
         </div>
@@ -177,9 +185,24 @@
                         <h3>Roblox</h3>
                         <p>Roblox Corp</p>
                         <div class="product-badges">
-                            <span class="badge badge-fast">⚡ Proses Cepat</span>
-                            <span class="badge badge-service">💬 Layanan Chat 24/7</span>
-                            <span class="badge badge-safe">✓ Pembayaran Aman</span>
+                            <span class="badge badge-fast">
+                                <svg viewBox="0 0 24 24" width="14" height="14">
+                                    <path fill="currentColor" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                                </svg>
+                                Proses Cepat
+                            </span>
+                            <span class="badge badge-service">
+                                <svg viewBox="0 0 24 24" width="14" height="14">
+                                    <path fill="currentColor" d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 9h12v2H6V9zm8 5H6v-2h8v2zm4-6H6V6h12v2z"/>
+                                </svg>
+                                Layanan Chat 24/7
+                            </span>
+                            <span class="badge badge-safe">
+                                <svg viewBox="0 0 24 24" width="14" height="14">
+                                    <path fill="currentColor" d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/>
+                                </svg>
+                                Pembayaran Aman
+                            </span>
                         </div>
                     </div>
                 </div>
@@ -196,10 +219,97 @@
                         <h3>Redfinger</h3>
                         <p>Cloud Gaming</p>
                         <div class="product-badges">
-                            <span class="badge badge-fast">⚡ Proses Cepat</span>
-                            <span class="badge badge-service">💬 Layanan Chat 24/7</span>
-                            <span class="badge badge-safe">✓ Pembayaran Aman</span>
+                            <span class="badge badge-fast">
+                                <svg viewBox="0 0 24 24" width="14" height="14">
+                                    <path fill="currentColor" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                                </svg>
+                                Proses Cepat
+                            </span>
+                            <span class="badge badge-service">
+                                <svg viewBox="0 0 24 24" width="14" height="14">
+                                    <path fill="currentColor" d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 9h12v2H6V9zm8 5H6v-2h8v2zm4-6H6V6h12v2z"/>
+                                </svg>
+                                Layanan Chat 24/7
+                            </span>
+                            <span class="badge badge-safe">
+                                <svg viewBox="0 0 24 24" width="14" height="14">
+                                    <path fill="currentColor" d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/>
+                                </svg>
+                                Pembayaran Aman
+                            </span>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section" id="faq">
+        <div class="container">
+            <div class="section-header">
+                <h2>❓ FREQUENTLY ASKED QUESTIONS</h2>
+            </div>
+            <p class="section-subtitle">Pertanyaan yang sering ditanyakan</p>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <h3>Bagaimana cara melakukan pemesanan?</h3>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Pilih produk yang ingin dibeli → Isi form pemesanan (username & WhatsApp) → Pilih paket → Klik ORDER → Otomatis diarahkan ke WhatsApp untuk konfirmasi dan pembayaran.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <h3>Berapa lama proses top up?</h3>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Proses top up memakan waktu 1-15 menit setelah pembayaran dikonfirmasi. Untuk produk tertentu bisa lebih cepat.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <h3>Metode pembayaran apa saja yang tersedia?</h3>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Kami menerima pembayaran melalui transfer bank, e-wallet (OVO, DANA, GoPay), dan QRIS. Detail pembayaran akan diberikan setelah konfirmasi pesanan via WhatsApp.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <h3>Apakah data saya aman?</h3>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Ya, sangat aman! Kami tidak meminta password akun Anda. Kami hanya memerlukan username/ID untuk proses top up dan semua data pribadi dijaga kerahasiaannya.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <h3>Bagaimana jika ada kesalahan dalam pemesanan?</h3>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Harap periksa kembali data yang Anda masukkan sebelum melakukan pembayaran. Jika terjadi kesalahan dari pihak kami, kami akan memberikan refund atau proses ulang. Namun jika kesalahan dari pihak customer, tidak ada refund.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <h3>Customer service aktif kapan?</h3>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Customer service kami aktif 24/7 melalui WhatsApp. Response time maksimal 5-10 menit.</p>
                     </div>
                 </div>
             </div>
@@ -211,7 +321,7 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-logo">
-                    <img src="https://res.cloudinary.com/dopevbhsx/image/upload/v1768847802/Suryaweb2_enjlbk.png" alt="Surya Store">
+                    <img src="https://res.cloudinary.com/dopevbhsx/image/upload/v1768847802/Suryaweb2_enjlbk.png" alt="Surya Store" style="border-radius: 12px;">
                     <p>Platform top up game terpercaya dan termurah di Indonesia</p>
                     <div class="social-links">
                         <a href="https://www.tiktok.com/@e_grazy322" target="_blank" class="social-link" title="TikTok">
@@ -278,5 +388,39 @@
     </a>
 
     <script src="script.js"></script>
+    <script>
+        // FAQ Toggle
+        function toggleFaq(element) {
+            const faqItem = element.parentElement;
+            const answer = faqItem.querySelector('.faq-answer');
+            const icon = element.querySelector('.faq-icon');
+            
+            faqItem.classList.toggle('active');
+            
+            if (faqItem.classList.contains('active')) {
+                answer.style.maxHeight = answer.scrollHeight + 'px';
+                icon.textContent = '−';
+            } else {
+                answer.style.maxHeight = '0';
+                icon.textContent = '+';
+            }
+        }
+
+        // Show Terms
+        function showTerms() {
+            alert('SYARAT & KETENTUAN SURYA STORE\n\n' +
+                  '1. Ketentuan Umum\n' +
+                  '- Pastikan data yang dimasukkan (Username/ID) sudah benar\n' +
+                  '- Kesalahan input data menjadi tanggung jawab pembeli\n' +
+                  '- Proses top up memakan waktu 1-15 menit setelah pembayaran diterima\n\n' +
+                  '2. Kebijakan Refund\n' +
+                  '- Tidak ada refund jika kesalahan dari pembeli\n' +
+                  '- Refund hanya berlaku jika terjadi kesalahan dari pihak kami\n\n' +
+                  '3. Customer Service\n' +
+                  '- CS aktif 24/7 via WhatsApp\n' +
+                  '- Response time maksimal 5-10 menit\n\n' +
+                  'Dengan melakukan pemesanan, Anda dianggap menyetujui syarat & ketentuan ini.');
+        }
+    </script>
 </body>
 </html>
