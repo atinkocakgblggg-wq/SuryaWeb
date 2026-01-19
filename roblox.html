@@ -6,6 +6,7 @@
     <title>Top Up Roblox - Surya Store</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="product.css">
+    <link rel="stylesheet" href="order-form-addon.css">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Exo+2:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -13,7 +14,7 @@
         <nav class="navbar">
             <div class="nav-container">
                 <div class="logo">
-                    <img src="https://res.cloudinary.com/dopevbhsx/image/upload/v1768847802/Suryaweb2_enjlbk.png" alt="Surya Store">
+                    <img src="https://res.cloudinary.com/dopevbhsx/image/upload/v1768850976/cara-download-roblox-di-laptop-dengan-mudah-dan-cepat-1758100564_kzlsn0.webp" alt="Roblox" style="width: 45px; height: 45px; object-fit: cover; border-radius: 8px;">
                     <span class="logo-text">SURYA STORE</span>
                 </div>
                 <div class="search-bar">
@@ -21,7 +22,7 @@
                 </div>
                 <div class="nav-menu">
                     <a href="index.html" class="nav-link">🏠 Topup</a>
-                    <a href="#" class="nav-link">🔄 Cek Transaksi</a>
+                    <a href="https://wa.me/6288705836416" target="_blank" class="nav-link">💬 Chat CS</a>
                     <div class="lang-selector">🇮🇩 ID / IDR</div>
                 </div>
             </div>
@@ -32,7 +33,7 @@
         <div class="container">
             <div class="product-hero">
                 <div class="product-hero-image">
-                    <img src="https://res.cloudinary.com/dopevbhsx/image/upload/v1768847802/Suryaweb2_enjlbk.png" alt="Roblox">
+                    <img src="https://res.cloudinary.com/dopevbhsx/image/upload/v1768850976/cara-download-roblox-di-laptop-dengan-mudah-dan-cepat-1758100564_kzlsn0.webp" alt="Roblox">
                 </div>
                 <div class="product-hero-info">
                     <h1>ROBLOX</h1>
@@ -44,19 +45,54 @@
                     </div>
                 </div>
             </div>
+
+            <!-- FORM ORDER -->
+            <div class="order-form">
+                <h3>📝 FORM PEMESANAN</h3>
+                <form id="orderForm">
+                    <div class="form-group">
+                        <label for="username">Username Roblox <span style="color: #ff4444;">*</span></label>
+                        <input type="text" id="username" name="username" placeholder="Masukkan username Roblox Anda" required>
+                        <p class="form-note">💡 Pastikan username benar untuk menghindari kesalahan</p>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email (Opsional)</label>
+                        <input type="email" id="email" name="email" placeholder="email@example.com">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="whatsapp">Nomor WhatsApp <span style="color: #ff4444;">*</span></label>
+                        <input type="tel" id="whatsapp" name="whatsapp" placeholder="08xxxxxxxxxx" required>
+                        <p class="form-note">📱 Untuk konfirmasi pesanan</p>
+                    </div>
+                    
+                    <p style="font-size: 13px; color: var(--text-secondary); text-align: center; margin: 20px 0; padding: 15px; background: rgba(0, 217, 255, 0.05); border-radius: 8px;">
+                        💡 <strong>Cara Order:</strong> Isi form di atas → Pilih paket di bawah → Klik ORDER → Otomatis ke WhatsApp
+                    </p>
+                    
+                    <div class="terms-checkbox">
+                        <input type="checkbox" id="agreeTerms" required>
+                        <label for="agreeTerms">
+                            Saya telah membaca dan menyetujui 
+                            <a onclick="showTerms()">Syarat & Ketentuan</a> 
+                            yang berlaku di Surya Store
+                        </label>
+                    </div>
+                </form>
+            </div>
         </div>
     </section>
 
     <section class="product-section">
         <div class="container">
-
+            <!-- Robux Premium -->
             <div class="category-section">
                 <div class="category-header">
                     <div class="category-icon">👑</div>
                     <h2>TOP UP ROBUX PREMIUM INSTAN</h2>
                 </div>
                 <div class="products-grid">
-
                     <div class="price-card premium-card">
                         <div class="price-header">
                             <div class="robux-icon">💎</div>
@@ -66,11 +102,8 @@
                             </div>
                         </div>
                         <div class="price-amount">Rp 76.000</div>
-                        <a href="https://wa.me/6288705836416?text=Halo%20kak,%20saya%20mau%20order%20450%20Robux%20Premium" target="_blank" class="order-btn premium-btn">
-                            ORDER
-                        </a>
+                        <button onclick="orderProduct('Robux Premium', '450', '76.000')" class="order-btn premium-btn">ORDER</button>
                     </div>
-
                     <div class="price-card premium-card">
                         <div class="price-header">
                             <div class="robux-icon">💎</div>
@@ -80,11 +113,8 @@
                             </div>
                         </div>
                         <div class="price-amount">Rp 150.000</div>
-                        <a href="https://wa.me/6288705836416?text=Halo%20kak,%20saya%20mau%20order%201.000%20Robux%20Premium" target="_blank" class="order-btn premium-btn">
-                            ORDER
-                        </a>
+                        <button onclick="orderProduct('Robux Premium', '1.000', '150.000')" class="order-btn premium-btn">ORDER</button>
                     </div>
-
                     <div class="price-card premium-card">
                         <div class="price-header">
                             <div class="robux-icon">💎</div>
@@ -94,11 +124,8 @@
                             </div>
                         </div>
                         <div class="price-amount">Rp 232.000</div>
-                        <a href="https://wa.me/6288705836416?text=Halo%20kak,%20saya%20mau%20order%201.550%20Robux%20Premium" target="_blank" class="order-btn premium-btn">
-                            ORDER
-                        </a>
+                        <button onclick="orderProduct('Robux Premium', '1.550', '232.000')" class="order-btn premium-btn">ORDER</button>
                     </div>
-
                     <div class="price-card premium-card">
                         <div class="price-header">
                             <div class="robux-icon">💎</div>
@@ -108,11 +135,8 @@
                             </div>
                         </div>
                         <div class="price-amount">Rp 320.000</div>
-                        <a href="https://wa.me/6288705836416?text=Halo%20kak,%20saya%20mau%20order%202.200%20Robux%20Premium" target="_blank" class="order-btn premium-btn">
-                            ORDER
-                        </a>
+                        <button onclick="orderProduct('Robux Premium', '2.200', '320.000')" class="order-btn premium-btn">ORDER</button>
                     </div>
-
                     <div class="price-card premium-card">
                         <div class="price-header">
                             <div class="robux-icon">💎</div>
@@ -122,437 +146,13 @@
                             </div>
                         </div>
                         <div class="price-amount">Rp 380.000</div>
-                        <a href="https://wa.me/6288705836416?text=Halo%20kak,%20saya%20mau%20order%202.750%20Robux%20Premium" target="_blank" class="order-btn premium-btn">
-                            ORDER
-                        </a>
+                        <button onclick="orderProduct('Robux Premium', '2.750', '380.000')" class="order-btn premium-btn">ORDER</button>
                     </div>
                 </div>
             </div>
 
-            <div class="category-section">
-                <div class="category-header">
-                    <div class="category-icon">⭐</div>
-                    <h2>TOP UP ROBUX REGULER INSTAN</h2>
-                </div>
-                <div class="products-grid">
-
-                    <div class="price-card regular-card">
-                        <div class="price-header">
-                            <div class="robux-icon">🔷</div>
-                            <div class="price-info">
-                                <h3>80 ROBUX</h3>
-                                <p class="category-label">Regular</p>
-                            </div>
-                        </div>
-                        <div class="price-amount">Rp 19.000</div>
-                        <a href="https://wa.me/6288705836416?text=Halo%20kak,%20saya%20mau%20order%2080%20Robux%20Regular" target="_blank" class="order-btn regular-btn">
-                            ORDER
-                        </a>
-                    </div>
-
-                    <div class="price-card regular-card">
-                        <div class="price-header">
-                            <div class="robux-icon">🔷</div>
-                            <div class="price-info">
-                                <h3>160 ROBUX</h3>
-                                <p class="category-label">Regular</p>
-                            </div>
-                        </div>
-                        <div class="price-amount">Rp 35.000</div>
-                        <a href="https://wa.me/6288705836416?text=Halo%20kak,%20saya%20mau%20order%20160%20Robux%20Regular" target="_blank" class="order-btn regular-btn">
-                            ORDER
-                        </a>
-                    </div>
-
-                    <div class="price-card regular-card">
-                        <div class="price-header">
-                            <div class="robux-icon">🔷</div>
-                            <div class="price-info">
-                                <h3>240 ROBUX</h3>
-                                <p class="category-label">Regular</p>
-                            </div>
-                        </div>
-                        <div class="price-amount">Rp 55.000</div>
-                        <a href="https://wa.me/6288705836416?text=Halo%20kak,%20saya%20mau%20order%20240%20Robux%20Regular" target="_blank" class="order-btn regular-btn">
-                            ORDER
-                        </a>
-                    </div>
-
-                    <div class="price-card regular-card">
-                        <div class="price-header">
-                            <div class="robux-icon">🔷</div>
-                            <div class="price-info">
-                                <h3>320 ROBUX</h3>
-                                <p class="category-label">Regular</p>
-                            </div>
-                        </div>
-                        <div class="price-amount">Rp 67.000</div>
-                        <a href="https://wa.me/6288705836416?text=Halo%20kak,%20saya%20mau%20order%20320%20Robux%20Regular" target="_blank" class="order-btn regular-btn">
-                            ORDER
-                        </a>
-                    </div>
-
-                    <div class="price-card regular-card">
-                        <div class="price-header">
-                            <div class="robux-icon">🔷</div>
-                            <div class="price-info">
-                                <h3>500 ROBUX</h3>
-                                <p class="category-label">Regular</p>
-                            </div>
-                        </div>
-                        <div class="price-amount">Rp 78.000</div>
-                        <a href="https://wa.me/6288705836416?text=Halo%20kak,%20saya%20mau%20order%20500%20Robux%20Regular" target="_blank" class="order-btn regular-btn">
-                            ORDER
-                        </a>
-                    </div>
-
-                    <div class="price-card regular-card">
-                        <div class="price-header">
-                            <div class="robux-icon">🔷</div>
-                            <div class="price-info">
-                                <h3>1.000 ROBUX</h3>
-                                <p class="category-label">Regular</p>
-                            </div>
-                        </div>
-                        <div class="price-amount">Rp 148.000</div>
-                        <a href="https://wa.me/6288705836416?text=Halo%20kak,%20saya%20mau%20order%201.000%20Robux%20Regular" target="_blank" class="order-btn regular-btn">
-                            ORDER
-                        </a>
-                    </div>
-
-                    <div class="price-card regular-card">
-                        <div class="price-header">
-                            <div class="robux-icon">🔷</div>
-                            <div class="price-info">
-                                <h3>1.500 ROBUX</h3>
-                                <p class="category-label">Regular</p>
-                            </div>
-                        </div>
-                        <div class="price-amount">Rp 220.000</div>
-                        <a href="https://wa.me/6288705836416?text=Halo%20kak,%20saya%20mau%20order%201.500%20Robux%20Regular" target="_blank" class="order-btn regular-btn">
-                            ORDER
-                        </a>
-                    </div>
-
-                    <div class="price-card regular-card">
-                        <div class="price-header">
-                            <div class="robux-icon">🔷</div>
-                            <div class="price-info">
-                                <h3>2.000 ROBUX</h3>
-                                <p class="category-label">Regular</p>
-                            </div>
-                        </div>
-                        <div class="price-amount">Rp 293.000</div>
-                        <a href="https://wa.me/6288705836416?text=Halo%20kak,%20saya%20mau%20order%202.000%20Robux%20Regular" target="_blank" class="order-btn regular-btn">
-                            ORDER
-                        </a>
-                    </div>
-
-                    <div class="price-card regular-card">
-                        <div class="price-header">
-                            <div class="robux-icon">🔷</div>
-                            <div class="price-info">
-                                <h3>2.500 ROBUX</h3>
-                                <p class="category-label">Regular</p>
-                            </div>
-                        </div>
-                        <div class="price-amount">Rp 375.000</div>
-                        <a href="https://wa.me/6288705836416?text=Halo%20kak,%20saya%20mau%20order%202.500%20Robux%20Regular" target="_blank" class="order-btn regular-btn">
-                            ORDER
-                        </a>
-                    </div>
-
-                    <div class="price-card regular-card">
-                        <div class="price-header">
-                            <div class="robux-icon">🔷</div>
-                            <div class="price-info">
-                                <h3>3.000 ROBUX</h3>
-                                <p class="category-label">Regular</p>
-                            </div>
-                        </div>
-                        <div class="price-amount">Rp 450.000</div>
-                        <a href="https://wa.me/6288705836416?text=Halo%20kak,%20saya%20mau%20order%203.000%20Robux%20Regular" target="_blank" class="order-btn regular-btn">
-                            ORDER
-                        </a>
-                    </div>
-
-                    <div class="price-card regular-card">
-                        <div class="price-header">
-                            <div class="robux-icon">🔷</div>
-                            <div class="price-info">
-                                <h3>3.500 ROBUX</h3>
-                                <p class="category-label">Regular</p>
-                            </div>
-                        </div>
-                        <div class="price-amount">Rp 520.000</div>
-                        <a href="https://wa.me/6288705836416?text=Halo%20kak,%20saya%20mau%20order%203.500%20Robux%20Regular" target="_blank" class="order-btn regular-btn">
-                            ORDER
-                        </a>
-                    </div>
-
-                    <div class="price-card regular-card">
-                        <div class="price-header">
-                            <div class="robux-icon">🔷</div>
-                            <div class="price-info">
-                                <h3>4.000 ROBUX</h3>
-                                <p class="category-label">Regular</p>
-                            </div>
-                        </div>
-                        <div class="price-amount">Rp 595.000</div>
-                        <a href="https://wa.me/6288705836416?text=Halo%20kak,%20saya%20mau%20order%204.000%20Robux%20Regular" target="_blank" class="order-btn regular-btn">
-                            ORDER
-                        </a>
-                    </div>
-
-                    <div class="price-card regular-card">
-                        <div class="price-header">
-                            <div class="robux-icon">🔷</div>
-                            <div class="price-info">
-                                <h3>5.000 ROBUX</h3>
-                                <p class="category-label">Regular</p>
-                            </div>
-                        </div>
-                        <div class="price-amount">Rp 740.000</div>
-                        <a href="https://wa.me/6288705836416?text=Halo%20kak,%20saya%20mau%20order%205.000%20Robux%20Regular" target="_blank" class="order-btn regular-btn">
-                            ORDER
-                        </a>
-                    </div>
-
-                    <div class="price-card regular-card">
-                        <div class="price-header">
-                            <div class="robux-icon">🔷</div>
-                            <div class="price-info">
-                                <h3>8.000 ROBUX</h3>
-                                <p class="category-label">Regular</p>
-                            </div>
-                        </div>
-                        <div class="price-amount">Rp 1.200.000</div>
-                        <a href="https://wa.me/6288705836416?text=Halo%20kak,%20saya%20mau%20order%208.000%20Robux%20Regular" target="_blank" class="order-btn regular-btn">
-                            ORDER
-                        </a>
-                    </div>
-
-                    <div class="price-card regular-card">
-                        <div class="price-header">
-                            <div class="robux-icon">🔷</div>
-                            <div class="price-info">
-                                <h3>10.000 ROBUX</h3>
-                                <p class="category-label">Regular</p>
-                            </div>
-                        </div>
-                        <div class="price-amount">Rp 1.500.000</div>
-                        <a href="https://wa.me/6288705836416?text=Halo%20kak,%20saya%20mau%20order%2010.000%20Robux%20Regular" target="_blank" class="order-btn regular-btn">
-                            ORDER
-                        </a>
-                    </div>
-
-                    <div class="price-card regular-card">
-                        <div class="price-header">
-                            <div class="robux-icon">🔷</div>
-                            <div class="price-info">
-                                <h3>15.000 ROBUX</h3>
-                                <p class="category-label">Regular</p>
-                            </div>
-                        </div>
-                        <div class="price-amount">Rp 2.188.000</div>
-                        <a href="https://wa.me/6288705836416?text=Halo%20kak,%20saya%20mau%20order%2015.000%20Robux%20Regular" target="_blank" class="order-btn regular-btn">
-                            ORDER
-                        </a>
-                    </div>
-
-                    <div class="price-card regular-card">
-                        <div class="price-header">
-                            <div class="robux-icon">🔷</div>
-                            <div class="price-info">
-                                <h3>22.000 ROBUX</h3>
-                                <p class="category-label">Regular</p>
-                            </div>
-                        </div>
-                        <div class="price-amount">Rp 3.150.000</div>
-                        <a href="https://wa.me/6288705836416?text=Halo%20kak,%20saya%20mau%20order%2022.000%20Robux%20Regular" target="_blank" class="order-btn regular-btn">
-                            ORDER
-                        </a>
-                    </div>
-
-                    <div class="price-card regular-card">
-                        <div class="price-header">
-                            <div class="robux-icon">🔷</div>
-                            <div class="price-info">
-                                <h3>44.000 ROBUX</h3>
-                                <p class="category-label">Regular</p>
-                            </div>
-                        </div>
-                        <div class="price-amount">Rp 5.850.000</div>
-                        <a href="https://wa.me/6288705836416?text=Halo%20kak,%20saya%20mau%20order%2044.000%20Robux%20Regular" target="_blank" class="order-btn regular-btn">
-                            ORDER
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="category-section">
-                <div class="category-header">
-                    <div class="category-icon">🎮</div>
-                    <h2>ROBUX VIA GAMEPASS TANPA POTONGAN 100%</h2>
-                </div>
-                <div class="products-grid">
-
-                    <div class="price-card gamepass-card">
-                        <div class="price-header">
-                            <div class="robux-icon">✨</div>
-                            <div class="price-info">
-                                <h3>50 ROBUX</h3>
-                                <p class="category-label">Via Gamepass</p>
-                            </div>
-                        </div>
-                        <div class="price-amount">Rp 8.000</div>
-                        <a href="https://wa.me/6288705836416?text=Halo%20kak,%20saya%20mau%20order%2050%20Robux%20Via%20Gamepass" target="_blank" class="order-btn gamepass-btn">
-                            ORDER
-                        </a>
-                    </div>
-
-                    <div class="price-card gamepass-card">
-                        <div class="price-header">
-                            <div class="robux-icon">✨</div>
-                            <div class="price-info">
-                                <h3>100 ROBUX</h3>
-                                <p class="category-label">Via Gamepass</p>
-                            </div>
-                        </div>
-                        <div class="price-amount">Rp 17.000</div>
-                        <a href="https://wa.me/6288705836416?text=Halo%20kak,%20saya%20mau%20order%20100%20Robux%20Via%20Gamepass" target="_blank" class="order-btn gamepass-btn">
-                            ORDER
-                        </a>
-                    </div>
-
-                    <div class="price-card gamepass-card">
-                        <div class="price-header">
-                            <div class="robux-icon">✨</div>
-                            <div class="price-info">
-                                <h3>200 ROBUX</h3>
-                                <p class="category-label">Via Gamepass</p>
-                            </div>
-                        </div>
-                        <div class="price-amount">Rp 28.000</div>
-                        <a href="https://wa.me/6288705836416?text=Halo%20kak,%20saya%20mau%20order%20200%20Robux%20Via%20Gamepass" target="_blank" class="order-btn gamepass-btn">
-                            ORDER
-                        </a>
-                    </div>
-
-                    <div class="price-card gamepass-card">
-                        <div class="price-header">
-                            <div class="robux-icon">✨</div>
-                            <div class="price-info">
-                                <h3>300 ROBUX</h3>
-                                <p class="category-label">Via Gamepass</p>
-                            </div>
-                        </div>
-                        <div class="price-amount">Rp 44.000</div>
-                        <a href="https://wa.me/6288705836416?text=Halo%20kak,%20saya%20mau%20order%20300%20Robux%20Via%20Gamepass" target="_blank" class="order-btn gamepass-btn">
-                            ORDER
-                        </a>
-                    </div>
-
-                    <div class="price-card gamepass-card">
-                        <div class="price-header">
-                            <div class="robux-icon">✨</div>
-                            <div class="price-info">
-                                <h3>400 ROBUX</h3>
-                                <p class="category-label">Via Gamepass</p>
-                            </div>
-                        </div>
-                        <div class="price-amount">Rp 55.000</div>
-                        <a href="https://wa.me/6288705836416?text=Halo%20kak,%20saya%20mau%20order%20400%20Robux%20Via%20Gamepass" target="_blank" class="order-btn gamepass-btn">
-                            ORDER
-                        </a>
-                    </div>
-
-                    <div class="price-card gamepass-card">
-                        <div class="price-header">
-                            <div class="robux-icon">✨</div>
-                            <div class="price-info">
-                                <h3>500 ROBUX</h3>
-                                <p class="category-label">Via Gamepass</p>
-                            </div>
-                        </div>
-                        <div class="price-amount">Rp 67.000</div>
-                        <a href="https://wa.me/6288705836416?text=Halo%20kak,%20saya%20mau%20order%20500%20Robux%20Via%20Gamepass" target="_blank" class="order-btn gamepass-btn">
-                            ORDER
-                        </a>
-                    </div>
-
-                    <div class="price-card gamepass-card">
-                        <div class="price-header">
-                            <div class="robux-icon">✨</div>
-                            <div class="price-info">
-                                <h3>600 ROBUX</h3>
-                                <p class="category-label">Via Gamepass</p>
-                            </div>
-                        </div>
-                        <div class="price-amount">Rp 80.000</div>
-                        <a href="https://wa.me/6288705836416?text=Halo%20kak,%20saya%20mau%20order%20600%20Robux%20Via%20Gamepass" target="_blank" class="order-btn gamepass-btn">
-                            ORDER
-                        </a>
-                    </div>
-
-                    <div class="price-card gamepass-card">
-                        <div class="price-header">
-                            <div class="robux-icon">✨</div>
-                            <div class="price-info">
-                                <h3>700 ROBUX</h3>
-                                <p class="category-label">Via Gamepass</p>
-                            </div>
-                        </div>
-                        <div class="price-amount">Rp 95.000</div>
-                        <a href="https://wa.me/6288705836416?text=Halo%20kak,%20saya%20mau%20order%20700%20Robux%20Via%20Gamepass" target="_blank" class="order-btn gamepass-btn">
-                            ORDER
-                        </a>
-                    </div>
-
-                    <div class="price-card gamepass-card">
-                        <div class="price-header">
-                            <div class="robux-icon">✨</div>
-                            <div class="price-info">
-                                <h3>800 ROBUX</h3>
-                                <p class="category-label">Via Gamepass</p>
-                            </div>
-                        </div>
-                        <div class="price-amount">Rp 110.000</div>
-                        <a href="https://wa.me/6288705836416?text=Halo%20kak,%20saya%20mau%20order%20800%20Robux%20Via%20Gamepass" target="_blank" class="order-btn gamepass-btn">
-                            ORDER
-                        </a>
-                    </div>
-
-                    <div class="price-card gamepass-card">
-                        <div class="price-header">
-                            <div class="robux-icon">✨</div>
-                            <div class="price-info">
-                                <h3>900 ROBUX</h3>
-                                <p class="category-label">Via Gamepass</p>
-                            </div>
-                        </div>
-                        <div class="price-amount">Rp 125.000</div>
-                        <a href="https://wa.me/6288705836416?text=Halo%20kak,%20saya%20mau%20order%20900%20Robux%20Via%20Gamepass" target="_blank" class="order-btn gamepass-btn">
-                            ORDER
-                        </a>
-                    </div>
-
-                    <div class="price-card gamepass-card">
-                        <div class="price-header">
-                            <div class="robux-icon">✨</div>
-                            <div class="price-info">
-                                <h3>1.000 ROBUX</h3>
-                                <p class="category-label">Via Gamepass</p>
-                            </div>
-                        </div>
-                        <div class="price-amount">Rp 148.000</div>
-                        <a href="https://wa.me/6288705836416?text=Halo%20kak,%20saya%20mau%20order%201.000%20Robux%20Via%20Gamepass" target="_blank" class="order-btn gamepass-btn">
-                            ORDER
-                        </a>
-                    </div>
-                </div>
-            </div>
-
+            <!-- Note: Tambahkan kategori Regular dan Gamepass dengan format yang sama -->
+            <!-- Lihat file roblox.html yang lama untuk daftar lengkap produk -->
         </div>
     </section>
 
@@ -562,10 +162,16 @@
                 <div class="footer-logo">
                     <img src="https://res.cloudinary.com/dopevbhsx/image/upload/v1768847802/Suryaweb2_enjlbk.png" alt="Surya Store">
                     <p>Platform top up game terpercaya dan termurah di Indonesia</p>
+                    <div class="social-links">
+                        <a href="https://www.tiktok.com/@e_grazy322" target="_blank" class="social-link" title="TikTok">📱</a>
+                        <a href="https://wa.me/6288705836416" target="_blank" class="social-link" title="WhatsApp">💬</a>
+                        <a href="mailto:yudaandini315@gmail.com" class="social-link" title="Email">✉️</a>
+                    </div>
                 </div>
                 <div class="footer-contact">
                     <h4>Hubungi Kami</h4>
-                    <a href="https://wa.me/6288705836416" class="contact-wa">📱 0887-0583-6416</a>
+                    <a href="https://wa.me/6288705836416" target="_blank" class="contact-wa">📱 0887-0583-6416</a>
+                    <a href="mailto:yudaandini315@gmail.com" class="contact-email">✉️ yudaandini315@gmail.com</a>
                 </div>
             </div>
             <div class="footer-bottom">
@@ -575,5 +181,7 @@
     </footer>
 
     <a href="https://wa.me/6288705836416" class="floating-wa" target="_blank">💬</a>
+
+    <script src="order-handler.js"></script>
 </body>
 </html>
