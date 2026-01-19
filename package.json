@@ -1,8 +1,0 @@
-{
-  "name": "surya-store",
-  "version": "1.0.0",
-  "description": "Surya Store - Top Up Roblox & Redfinger",
-  "scripts": {
-    "build": "echo 'Static site - no build needed'"
-  }
-}
