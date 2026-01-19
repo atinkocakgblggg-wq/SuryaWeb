@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surya Store - Top Up Roblox & Redfinger Termurah</title>
+    <meta name="description" content="Top up Robux Premium, Reguler, dan Redfinger VIP dengan harga terjangkau dan proses instan!">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <h1>SURYA STORE</h1>
+                    <p>Top Up Roblox & Redfinger</p>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#robux">Robux</a></li>
+                    <li><a href="#redfinger">Redfinger</a></li>
+                    <li><a href="#order">Order</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Top Up Roblox & Redfinger</h1>
+                <p class="hero-subtitle">Proses Cepat • Harga Terjangkau • Terpercaya</p>
+                <div class="hero-buttons">
+                    <a href="#order" class="btn btn-primary">Order Sekarang</a>
+                    <a href="#robux" class="btn btn-secondary">Lihat Harga</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features">
+        <div class="container">
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Proses Cepat</h3>
+                    <p>Proses instan setelah pembayaran dikonfirmasi</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💎</div>
+                    <h3>Harga Terbaik</h3>
+                    <p>Harga termurah dengan kualitas terjamin</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🛡️</div>
+                    <h3>100% Aman</h3>
+                    <p>Transaksi aman dan terpercaya</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💬</div>
+                    <h3>CS 24/7</h3>
+                    <p>Customer service siap membantu kapan saja</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Robux Premium Section -->
+    <section id="robux" class="products">
+        <div class="container">
+            <div class="section-header">
+                <h2>Top Up Robux Premium Instan</h2>
+                <p>Dapatkan Robux Premium dengan harga terbaik!</p>
+            </div>
+            <div class="product-grid">
+                <div class="product-card" data-product="robux-premium" data-amount="450" data-price="76000">
+                    <div class="product-badge">Premium</div>
+                    <div class="product-icon">💎</div>
+                    <h3>450 Robux</h3>
+                    <p class="product-price">Rp 76.000</p>
+                    <button class="btn btn-order" onclick="selectProduct(this)">Pilih</button>
+                </div>
+                <div class="product-card" data-product="robux-premium" data-amount="1000" data-price="150000">
+                    <div class="product-badge">Premium</div>
+                    <div class="product-icon">💎</div>
+                    <h3>1.000 Robux</h3>
+                    <p class="product-price">Rp 150.000</p>
+                    <button class="btn btn-order" onclick="selectProduct(this)">Pilih</button>
+                </div>
+                <div class="product-card popular" data-product="robux-premium" data-amount="1550" data-price="232000">
+                    <div class="product-badge">Premium</div>
+                    <div class="popular-tag">Popular</div>
+                    <div class="product-icon">💎</div>
+                    <h3>1.550 Robux</h3>
+                    <p class="product-price">Rp 232.000</p>
+                    <button class="btn btn-order" onclick="selectProduct(this)">Pilih</button>
+                </div>
+                <div class="product-card" data-product="robux-premium" data-amount="2200" data-price="320000">
+                    <div class="product-badge">Premium</div>
+                    <div class="product-icon">💎</div>
+                    <h3>2.200 Robux</h3>
+                    <p class="product-price">Rp 320.000</p>
+                    <button class="btn btn-order" onclick="selectProduct(this)">Pilih</button>
+                </div>
+                <div class="product-card" data-product="robux-premium" data-amount="2750" data-price="380000">
+                    <div class="product-badge">Premium</div>
+                    <div class="product-icon">💎</div>
+                    <h3>2.750 Robux</h3>
+                    <p class="product-price">Rp 380.000</p>
+                    <button class="btn btn-order" onclick="selectProduct(this)">Pilih</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Robux Regular Section -->
+    <section class="products products-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2>Top Up Robux Reguler Instan</h2>
+                <p>Pilihan ekonomis dengan proses tetap cepat!</p>
+            </div>
+            <div class="product-grid">
+                <div class="product-card" data-product="robux-regular" data-amount="80" data-price="19000">
+                    <div class="product-icon">⭐</div>
+                    <h3>80 Robux</h3>
+                    <p class="product-price">Rp 19.000</p>
+                    <button class="btn btn-order" onclick="selectProduct(this)">Pilih</button>
+                </div>
+                <div class="product-card" data-product="robux-regular" data-amount="160" data-price="35000">
+                    <div class="product-icon">⭐</div>
+                    <h3>160 Robux</h3>
+                    <p class="product-price">Rp 35.000</p>
+                    <button class="btn btn-order" onclick="selectProduct(this)">Pilih</button>
+                </div>
+                <div class="product-card" data-product="robux-regular" data-amount="240" data-price="55000">
+                    <div class="product-icon">⭐</div>
+                    <h3>240 Robux</h3>
+                    <p class="product-price">Rp 55.000</p>
+                    <button class="btn btn-order" onclick="selectProduct(this)">Pilih</button>
+                </div>
+                <div class="product-card" data-product="robux-regular" data-amount="320" data-price="67000">
+                    <div class="product-icon">⭐</div>
+                    <h3>320 Robux</h3>
+                    <p class="product-price">Rp 67.000</p>
+                    <button class="btn btn-order" onclick="selectProduct(this)">Pilih</button>
+                </div>
+                <div class="product-card" data-product="robux-regular" data-amount="500" data-price="78000">
+                    <div class="product-icon">⭐</div>
+                    <h3>500 Robux</h3>
+                    <p class="product-price">Rp 78.000</p>
+                    <button class="btn btn-order" onclick="selectProduct(this)">Pilih</button>
+                </div>
+                <div class="product-card popular" data-product="robux-regular" data-amount="1000" data-price="148000">
+                    <div class="popular-tag">Popular</div>
+                    <div class="product-icon">⭐</div>
+                    <h3>1.000 Robux</h3>
+                    <p class="product-price">Rp 148.000</p>
+                    <button class="btn btn-order" onclick="selectProduct(this)">Pilih</button>
+                </div>
+                <div class="product-card" data-product="robux-regular" data-amount="1500" data-price="220000">
+                    <div class="product-icon">⭐</div>
+                    <h3>1.500 Robux</h3>
+                    <p class="product-price">Rp 220.000</p>
+                    <button class="btn btn-order" onclick="selectProduct(this)">Pilih</button>
+                </div>
+                <div class="product-card" data-product="robux-regular" data-amount="2000" data-price="293000">
+                    <div class="product-icon">⭐</div>
+                    <h3>2.000 Robux</h3>
+                    <p class="product-price">Rp 293.000</p>
+                    <button class="btn btn-order" onclick="selectProduct(this)">Pilih</button>
+                </div>
+                <div class="product-card" data-product="robux-regular" data-amount="2500" data-price="375000">
+                    <div class="product-icon">⭐</div>
+                    <h3>2.500 Robux</h3>
+                    <p class="product-price">Rp 375.000</p>
+                    <button class="btn btn-order" onclick="selectProduct(this)">Pilih</button>
+                </div>
+                <div class="product-card" data-product="robux-regular" data-amount="3000" data-price="450000">
+                    <div class="product-icon">⭐</div>
+                    <h3>3.000 Robux</h3>
+                    <p class="product-price">Rp 450.000</p>
+                    <button class="btn btn-order" onclick="selectProduct(this)">Pilih</button>
+                </div>
+                <div class="product-card" data-product="robux-regular" data-amount="3500" data-price="520000">
+                    <div class="product-icon">⭐</div>
+                    <h3>3.500 Robux</h3>
+                    <p class="product-price">Rp 520.000</p>
+                    <button class="btn btn-order" onclick="selectProduct(this)">Pilih</button>
+                </div>
+                <div class="product-card" data-product="robux-regular" data-amount="4000" data-price="595000">
+                    <div class="product-icon">⭐</div>
+                    <h3>4.000 Robux</h3>
+                    <p class="product-price">Rp 595.000</p>
+                    <button class="btn btn-order" onclick="selectProduct(this)">Pilih</button>
+                </div>
+                <div class="product-card" data-product="robux-regular" data-amount="5000" data-price="740000">
+                    <div class="product-icon">⭐</div>
+                    <h3>5.000 Robux</h3>
+                    <p class="product-price">Rp 740.000</p>
+                    <button class="btn btn-order" onclick="selectProduct(this)">Pilih</button>
+                </div>
+                <div class="product-card" data-product="robux-regular" data-amount="8000" data-price="1200000">
+                    <div class="product-icon">⭐</div>
+                    <h3>8.000 Robux</h3>
+                    <p class="product-price">Rp 1.200.000</p>
+                    <button class="btn btn-order" onclick="selectProduct(this)">Pilih</button>
+                </div>
+                <div class="product-card" data-product="robux-regular" data-amount="10000" data-price="1500000">
+                    <div class="product-icon">⭐</div>
+                    <h3>10.000 Robux</h3>
+                    <p class="product-price">Rp 1.500.000</p>
+                    <button class="btn btn-order" onclick="selectProduct(this)">Pilih</button>
+                </div>
+                <div class="product-card" data-product="robux-regular" data-amount="15000" data-price="2188000">
+                    <div class="product-icon">⭐</div>
+                    <h3>15.000 Robux</h3>
+                    <p class="product-price">Rp 2.188.000</p>
+                    <button class="btn btn-order" onclick="selectProduct(this)">Pilih</button>
+                </div>
+                <div class="product-card" data-product="robux-regular" data-amount="22000" data-price="3150000">
+                    <div class="product-icon">⭐</div>
+                    <h3>22.000 Robux</h3>
+                    <p class="product-price">Rp 3.150.000</p>
+                    <button class="btn btn-order" onclick="selectProduct(this)">Pilih</button>
+                </div>
+                <div class="product-card" data-product="robux-regular" data-amount="44000" data-price="5850000">
+                    <div class="product-icon">⭐</div>
+                    <h3>44.000 Robux</h3>
+                    <p class="product-price">Rp 5.850.000</p>
+                    <button class="btn btn-order" onclick="selectProduct(this)">Pilih</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Robux Gamepass Section -->
+    <section class="products">
+        <div class="container">
+            <div class="section-header">
+                <h2>Robux Via Gamepass (Tanpa Potongan 100%)</h2>
+                <p>Dapatkan Robux penuh tanpa potongan apapun!</p>
+            </div>
+            <div class="product-grid">
+                <div class="product-card" data-product="robux-gamepass" data-amount="50" data-price="8000">
+                    <div class="product-badge">No Cut</div>
+                    <div class="product-icon">🎮</div>
+                    <h3>50 Robux</h3>
+                    <p class="product-price">Rp 8.000</p>
+                    <button class="btn btn-order" onclick="selectProduct(this)">Pilih</button>
+                </div>
+                <div class="product-card" data-product="robux-gamepass" data-amount="100" data-price="17000">
+                    <div class="product-badge">No Cut</div>
+                    <div class="product-icon">🎮</div>
+                    <h3>100 Robux</h3>
+                    <p class="product-price">Rp 17.000</p>
+                    <button class="btn btn-order" onclick="selectProduct(this)">Pilih</button>
+                </div>
+                <div class="product-card" data-product="robux-gamepass" data-amount="200" data-price="28000">
+                    <div class="product-badge">No Cut</div>
+                    <div class="product-icon">🎮</div>
+                    <h3>200 Robux</h3>
+                    <p class="product-price">Rp 28.000</p>
+                    <button class="btn btn-order" onclick="selectProduct(this)">Pilih</button>
+                </div>
+                <div class="product-card" data-product="robux-gamepass" data-amount="300" data-price="44000">
+                    <div class="product-badge">No Cut</div>
+                    <div class="product-icon">🎮</div>
+                    <h3>300 Robux</h3>
+                    <p class="product-price">Rp 44.000</p>
+                    <button class="btn btn-order" onclick="selectProduct(this)">Pilih</button>
+                </div>
+                <div class="product-card" data-product="robux-gamepass" data-amount="400" data-price="55000">
+                    <div class="product-badge">No Cut</div>
+                    <div class="product-icon">🎮</div>
+                    <h3>400 Robux</h3>
+                    <p class="product-price">Rp 55.000</p>
+                    <button class="btn btn-order" onclick="selectProduct(this)">Pilih</button>
+                </div>
+                <div class="product-card" data-product="robux-gamepass" data-amount="500" data-price="67000">
+                    <div class="product-badge">No Cut</div>
+                    <div class="product-icon">🎮</div>
+                    <h3>500 Robux</h3>
+                    <p class="product-price">Rp 67.000</p>
+                    <button class="btn btn-order" onclick="selectProduct(this)">Pilih</button>
+                </div>
+                <div class="product-card" data-product="robux-gamepass" data-amount="600" data-price="80000">
+                    <div class="product-badge">No Cut</div>
+                    <div class="product-icon">🎮</div>
+                    <h3>600 Robux</h3>
+                    <p class="product-price">Rp 80.000</p>
+                    <button class="btn btn-order" onclick="selectProduct(this)">Pilih</button>
+                </div>
+                <div class="product-card" data-product="robux-gamepass" data-amount="700" data-price="95000">
+                    <div class="product-badge">No Cut</div>
+                    <div class="product-icon">🎮</div>
+                    <h3>700 Robux</h3>
+                    <p class="product-price">Rp 95.000</p>
+                    <button class="btn btn-order" onclick="selectProduct(this)">Pilih</button>
+                </div>
+                <div class="product-card" data-product="robux-gamepass" data-amount="800" data-price="110000">
+                    <div class="product-badge">No Cut</div>
+                    <div class="product-icon">🎮</div>
+                    <h3>800 Robux</h3>
+                    <p class="product-price">Rp 110.000</p>
+                    <button class="btn btn-order" onclick="selectProduct(this)">Pilih</button>
+                </div>
+                <div class="product-card" data-product="robux-gamepass" data-amount="900" data-price="125000">
+                    <div class="product-badge">No Cut</div>
+                    <div class="product-icon">🎮</div>
+                    <h3>900 Robux</h3>
+                    <p class="product-price">Rp 125.000</p>
+                    <button class="btn btn-order" onclick="selectProduct(this)">Pilih</button>
+                </div>
+                <div class="product-card popular" data-product="robux-gamepass" data-amount="1000" data-price="148000">
+                    <div class="product-badge">No Cut</div>
+                    <div class="popular-tag">Popular</div>
+                    <div class="product-icon">🎮</div>
+                    <h3>1.000 Robux</h3>
+                    <p class="product-price">Rp 148.000</p>
+                    <button class="btn btn-order" onclick="selectProduct(this)">Pilih</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Redfinger Section -->
+    <section id="redfinger" class="products products-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2>Top Up Redfinger VIP</h2>
+                <p>Cloud gaming untuk pengalaman bermain tanpa batas!</p>
+            </div>
+            
+            <!-- VIP Standard -->
+            <h3 class="subsection-title">VIP Standard</h3>
+            <div class="product-grid">
+                <div class="product-card" data-product="redfinger-vip" data-amount="7" data-price="25000">
+                    <div class="product-badge">VIP</div>
+                    <div class="product-icon">📱</div>
+                    <h3>7 Hari</h3>
+                    <p class="product-price">Rp 25.000</p>
+                    <button class="btn btn-order" onclick="selectProduct(this)">Pilih</button>
+                </div>
+                <div class="product-card popular" data-product="redfinger-vip" data-amount="30" data-price="65000">
+                    <div class="product-badge">VIP</div>
+                    <div class="popular-tag">Popular</div>
+                    <div class="product-icon">📱</div>
+                    <h3>30 Hari</h3>
+                    <p class="product-price">Rp 65.000</p>
+                    <button class="btn btn-order" onclick="selectProduct(this)">Pilih</button>
+                </div>
+            </div>
+
+            <!-- KVIP -->
+            <h3 class="subsection-title">KVIP (Premium)</h3>
+            <div class="product-grid">
+                <div class="product-card" data-product="redfinger-kvip" data-amount="7" data-price="36500">
+                    <div class="product-badge">KVIP</div>
+                    <div class="product-icon">👑</div>
+                    <h3>7 Hari</h3>
+                    <p class="product-price">Rp 36.500</p>
+                    <button class="btn btn-order" onclick="selectProduct(this)">Pilih</button>
+                </div>
+                <div class="product-card" data-product="redfinger-kvip" data-amount="30" data-price="145000">
+                    <div class="product-badge">KVIP</div>
+                    <div class="product-icon">👑</div>
+                    <h3>30 Hari</h3>
+                    <p class="product-price">Rp 145.000</p>
+                    <button class="btn btn-order" onclick="selectProduct(this)">Pilih</button>
+                </div>
+            </div>
+
+            <!-- SVIP -->
+            <h3 class="subsection-title">SVIP (Super Premium)</h3>
+            <div class="product-grid">
+                <div class="product-card" data-product="redfinger-svip" data-amount="7" data-price="60000">
+                    <div class="product-badge">SVIP</div>
+                    <div class="product-icon">💫</div>
+                    <h3>7 Hari</h3>
+                    <p class="product-price">Rp 60.000</p>
+                    <button class="btn btn-order" onclick="selectProduct(this)">Pilih</button>
+                </div>
+                <div class="product-card" data-product="redfinger-svip" data-amount="30" data-price="165000">
+                    <div class="product-badge">SVIP</div>
+                    <div class="product-icon">💫</div>
+                    <h3>30 Hari</h3>
+                    <p class="product-price">Rp 165.000</p>
+                    <button class="btn btn-order" onclick="selectProduct(this)">Pilih</button>
+                </div>
+            </div>
+
+            <!-- XVIP -->
+            <h3 class="subsection-title">XVIP (Ultra Premium)</h3>
+            <div class="product-grid">
+                <div class="product-card" data-product="redfinger-xvip" data-amount="7" data-price="110000">
+                    <div class="product-badge">XVIP</div>
+                    <div class="product-icon">🌟</div>
+                    <h3>7 Hari</h3>
+                    <p class="product-price">Rp 110.000</p>
+                    <button class="btn btn-order" onclick="selectProduct(this)">Pilih</button>
+                </div>
+                <div class="product-card" data-product="redfinger-xvip" data-amount="30" data-price="380000">
+                    <div class="product-badge">XVIP</div>
+                    <div class="product-icon">🌟</div>
+                    <h3>30 Hari</h3>
+                    <p class="product-price">Rp 380.000</p>
+                    <button class="btn btn-order" onclick="selectProduct(this)">Pilih</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Form Section -->
+    <section id="order" class="order-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Form Pemesanan</h2>
+                <p>Lengkapi data dibawah untuk melakukan pemesanan</p>
+            </div>
+            <div class="order-form-container">
+                <form id="orderForm" class="order-form">
+                    <div class="form-group">
+                        <label for="productType">Jenis Produk</label>
+                        <input type="text" id="productType" name="productType" readonly required>
+                    </div>
+                    <div class="form-group">
+                        <label for="productDetails">Detail Produk</label>
+                        <input type="text" id="productDetails" name="productDetails" readonly required>
+                    </div>
+                    <div class="form-group">
+                        <label for="totalPrice">Total Harga</label>
+                        <input type="text" id="totalPrice" name="totalPrice" readonly required>
+                    </div>
+                    <div class="form-group">
+                        <label for="username">Username/ID Game</label>
+                        <input type="text" id="username" name="username" placeholder="Masukkan username atau ID game" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="whatsapp">Nomor WhatsApp</label>
+                        <input type="tel" id="whatsapp" name="whatsapp" placeholder="08xxxxxxxxxx" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email (Opsional)</label>
+                        <input type="email" id="email" name="email" placeholder="email@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="notes">Catatan (Opsional)</label>
+                        <textarea id="notes" name="notes" rows="3" placeholder="Tambahkan catatan jika diperlukan"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Lanjut ke Pembayaran</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Hubungi Kami</h2>
+                <p>Kami siap membantu Anda 24/7</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">💬</div>
+                    <h3>WhatsApp</h3>
+                    <p>Chat dengan admin kami</p>
+                    <a href="https://wa.me/6282247575758" target="_blank" class="btn btn-secondary">Chat Sekarang</a>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">📧</div>
+                    <h3>Email</h3>
+                    <p>suryastore@gmail.com</p>
+                    <a href="mailto:suryastore@gmail.com" class="btn btn-secondary">Kirim Email</a>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">⏰</div>
+                    <h3>Jam Operasional</h3>
+                    <p>24 Jam / 7 Hari</p>
+                    <span class="online-status">● Online</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>SURYA STORE</h3>
+                    <p>Toko top up Roblox dan Redfinger terpercaya dengan harga terjangkau dan pelayanan terbaik.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#robux">Robux</a></li>
+                        <li><a href="#redfinger">Redfinger</a></li>
+                        <li><a href="#order">Order</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>WhatsApp: 0822-47-5758</li>
+                        <li>Email: suryastore@gmail.com</li>
+                        <li>Operational: 24/7</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Surya Store. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
