@@ -1,0 +1,26 @@
+{
+  "vip7": [
+    {"duration": "7 HARI", "price": "25.000"}
+  ],
+  "vip30": [
+    {"duration": "30 HARI", "price": "65.000"}
+  ],
+  "kvip7": [
+    {"duration": "7 HARI", "price": "36.500"}
+  ],
+  "kvip30": [
+    {"duration": "30 HARI", "price": "145.000"}
+  ],
+  "svip7": [
+    {"duration": "7 HARI", "price": "60.000"}
+  ],
+  "svip30": [
+    {"duration": "30 HARI", "price": "165.000"}
+  ],
+  "xvip7": [
+    {"duration": "7 HARI", "price": "110.000"}
+  ],
+  "xvip30": [
+    {"duration": "30 HARI", "price": "380.000"}
+  ]
+}
