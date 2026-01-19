@@ -1,6 +1,6 @@
 /* Additional styles untuk menyesuaikan dengan design */
 
-/* Social Links - Simple Icon Style */
+/* Social Links Style */
 .social-links {
     display: flex;
     gap: 15px;
@@ -8,17 +8,16 @@
 }
 
 .social-link {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
     background: rgba(0, 217, 255, 0.1);
-    border: 2px solid rgba(0, 217, 255, 0.3);
+    border: 1px solid rgba(0, 217, 255, 0.3);
     border-radius: 50%;
     color: var(--primary-color);
     transition: all 0.3s ease;
-    font-size: 24px;
 }
 
 .social-link:hover {
@@ -26,11 +25,6 @@
     color: var(--dark-bg);
     transform: translateY(-3px);
     box-shadow: 0 5px 20px rgba(0, 217, 255, 0.4);
-}
-
-/* Override SVG di social link jadi lebih simple */
-.social-link svg {
-    display: none;
 }
 
 /* FAQ Section */
