@@ -226,3 +226,124 @@
         padding: 25px;
     }
 }
+
+/* Contact Options Modal */
+.contact-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(5, 8, 16, 0.95);
+    backdrop-filter: blur(10px);
+    z-index: 10001;
+    align-items: center;
+    justify-content: center;
+    animation: fadeIn 0.3s ease;
+}
+
+.contact-modal-content {
+    background: var(--card-bg);
+    border-radius: 20px;
+    max-width: 500px;
+    width: 90%;
+    padding: 40px;
+    border: 2px solid rgba(0, 217, 255, 0.2);
+    box-shadow: var(--shadow-strong);
+    animation: slideInUp 0.4s ease;
+    text-align: center;
+}
+
+.contact-modal-content h3 {
+    font-family: 'Orbitron', sans-serif;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.contact-modal-content p {
+    color: var(--text-secondary);
+    margin-bottom: 30px;
+}
+
+.contact-options {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.contact-option-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 16px 24px;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.whatsapp-btn {
+    background: linear-gradient(135deg, #25D366, #128C7E);
+    color: white;
+}
+
+.whatsapp-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
+}
+
+.discord-btn {
+    background: linear-gradient(135deg, #5865F2, #404EED);
+    color: white;
+}
+
+.discord-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(88, 101, 242, 0.4);
+}
+
+.tiktok-btn {
+    background: linear-gradient(135deg, #000000, #EE1D52);
+    color: white;
+}
+
+.tiktok-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(238, 29, 82, 0.4);
+}
+
+.cancel-btn {
+    width: 100%;
+    padding: 12px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    color: var(--text-secondary);
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.cancel-btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+@media (max-width: 768px) {
+    .contact-modal-content {
+        padding: 30px 20px;
+    }
+    
+    .contact-option-btn {
+        padding: 14px 20px;
+        font-size: 14px;
+    }
+}
